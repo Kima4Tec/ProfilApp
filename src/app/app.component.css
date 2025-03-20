@@ -34,3 +34,7 @@ header li a.active {
     text-decoration: none;
     font-weight: bold;
 }
+
+a {
+    cursor: pointer;
+}

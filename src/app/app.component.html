@@ -5,6 +5,9 @@
         <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
         <li><a routerLink="/profil" routerLinkActive="active">Profil</a></li>
         <li><a routerLink="/contact" routerLinkActive="active">Kontakt</a></li>
+        <li><a routerLink="/admin" routerLinkActive="active">Admin</a></li>
+        <li><a routerLink="/register" *ngIf="authService.isLoggedIn()">Registrer ny bruger</a></li>
+        <li><a (click)="logout()" *ngIf="authService.isLoggedIn()">Logout</a></li>
       </ul>
     </nav>
   </header>
